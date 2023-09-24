@@ -173,10 +173,15 @@ const paginationViewHandlers = function () {
   PaginationView.renderContent(Model.state);
   PaginationView.addPaginationEventHandler(paginationViewEventHandler);
 };
+
+const newFeature = function () {
+  console.log('Hello');
+};
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 //CODE EXECUTED AS SOON AS THE PAGE LOADS
 const init = function () {
+  newFeature();
   fetchUserInfo();
   NavigationView.addNavBtnClickEventListener(navigationClickEventHandler);
   addDayPreviewViewHandlers();
