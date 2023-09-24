@@ -1,0 +1,399 @@
+@font-face {
+  src: url(fonts/ClashGrotesk-Regular.otf);
+  font-family: ClashGrotesk;
+}
+body {
+  font-family: ClashGrotesk;
+  padding: 30px;
+  background: #f5f5dc;
+}
+input::placeholder {
+  font-size: 13px;
+  font-weight: bold;
+}
+/*APP*/
+.spinner {
+  display: flex;
+  justify-content: center;
+}
+.reload {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.reload button {
+  margin-left: 50%;
+}
+.app {
+  border-radius: 30px;
+  font-family: 'Mandali', sans-serif;
+  background: whitesmoke;
+}
+.container-sections {
+  display: flex;
+}
+.left-section {
+  width: 450px;
+}
+.left-section li {
+  list-style-type: none;
+}
+
+.right-section {
+  flex: 1;
+  padding: 15px;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*BUTTONS*/
+button {
+  all: unset;
+}
+.new-line-btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.profile-btn {
+  height: 4.165rem;
+  width: 4.165rem;
+  margin: -5px;
+}
+
+/*ICONS*/
+.icon-btns {
+  cursor: pointer;
+}
+.refresh {
+  margin-left: 45%;
+}
+.refresh-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.nav-btn-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.pagination-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.day-preview-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.form-submit-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.new-line-icon {
+  height: 2.165rem;
+  width: 2.165rem;
+}
+
+.change-profile-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.day-summary-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.icon-minus {
+  padding-top: 4px;
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+/*UTILITIES*/
+.hidden {
+  display: none;
+}
+
+/*PAGINATION CONTAINER*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/*informationView*/
+.ing {
+  list-style-type: '🍽️';
+}
+.info-container {
+  display: flex;
+  gap: 180px;
+  justify-content: left;
+  align-items: center;
+}
+
+/*dayPreviewView*/
+
+.days {
+  list-style-type: none;
+}
+.day-container {
+  padding: 10px;
+}
+.calories {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+.total-calories {
+  margin: 0;
+  font-size: 25px;
+}
+.calories-to-meet {
+  margin-left: auto;
+}
+.day-container-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.date {
+  font-size: 35px;
+}
+
+.overlay {
+  background-color: #e8e8e8;
+}
+
+/*navigationView*/
+.add-span {
+  display: block;
+  text-align: center;
+  margin: -13px;
+}
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+.profile-span {
+  display: block;
+  text-align: center;
+  margin: -13px;
+}
+
+.branding {
+  display: flex;
+  font-family: ClashGrotesk;
+}
+
+.navigation {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(
+    to right,
+    #ff5f6d,
+    #ffc371
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.logo {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+/*informationView*/
+.day-summary {
+  display: flex;
+  align-items: center;
+}
+.day-summary h1 {
+  font-size: 35px;
+  font-style: bold;
+}
+
+/*hovers*/
+
+button:hover {
+  transform: scale(1.2);
+}
+.chart:hover {
+  transform: scale(1.09);
+}
+.nutrients-chart:hover {
+  transform: scale(1.09);
+}
+
+/*dayView newDayView modifyDayView*/
+.ingredients--section {
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+  align-content: center;
+}
+.name {
+  margin-top: 15px;
+}
+
+.form-section {
+  display: flex;
+  gap: 130px;
+}
+/*profileView / newProfileView*/
+.change-profile {
+  width: 300px;
+  clear: both;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown select::placeholder {
+  /*hide original SELECT element:*/
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/*style the arrow inside the select element:*/
+
+.change-profile [type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.dropdown select {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.change-profile label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.change-profile input {
+  width: 100%;
+  clear: both;
+}
+.informations {
+  list-style-image: url(./images/info.svg);
+}
+
+/*CHART*/
+.chart {
+  width: 350px;
+  height: auto;
+}
+
+.chart span {
+  font-size: 20px;
+}
+.nutrients-chart-img {
+  width: 600px;
+  margin-left: 65px;
+}
+
+/* SPINNER */
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 100px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

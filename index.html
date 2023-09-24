@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&family=Monoton&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script type="module" defer src="src/js/controller.js"></script>
+
+    <title>WEIGHT TRACKER</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <nav class="navigation">
+        <div class="branding">
+          <div class="logo">
+            <img 
+                width="auto"
+                height="80"
+                src="https://m.media-amazon.com/images/I/61s2HLYntQL.png"
+            /></a>
+          </div>
+          <div class="name"><h2>Calorie Tracker</h2></div>
+        </div>
+        <div class="nav-buttons">
+          <button class="add-new-day icon-btns" type="button">
+            <svg class="nav-btn-icon add-btn">
+              <use href="src/images/icons.svg#icon-add" />
+            </svg>
+            <span class="add-span"><strong>ADD</strong></span>
+          </button>
+          <button class="profile icon-btns" type="button">
+            <svg class="profile-btn">
+              <use href="src/images/icons.svg#icon-profile" />
+            </svg>
+            <span class="profile-span"><strong>PROFILE</strong></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-sections">
+        <div class="container">
+        <section class="left-section">
+          <ul class="days">
+            <!--
+            <li>
+              <div class="day-container">
+                <time class="date" datetime="2018-07-07">July 7</time>
+                <div class="calories">
+                  <p class="total-calories">10000</p>
+                  <div class="symbol">
+                    <img width="auto" height="20" src="ok.png" />
+                  </div>
+                  <div class="calories-to-meet">
+                    <p class="total-calories">10000</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            -->
+          </ul>
+        </section>
+        <div class="pagination"></div>
+      </div>
+
+        <section class="right-section">
+          <!--  
+          <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+           <div class="info-container ing-container">
+            <div class="data-container ingredients-data">
+              <ul>
+                <li>
+                  300 g (about 30) Savoiardi (Ladyfingers). We recommend
+                  VICENZOVO SAVOIARDI LADYFINGERS by Matilde Vicenzi, or make
+                  homemade ladyfingers with our recipe, which are great!
+                </li>
+                <li>
+                  500 g (1,1 lb = 2 1/4 cups) of mascarpone cheese. Try our
+                  recipe for homemade mascarpone cheese.
+                </li>
+                <li>4 medium eggs (about 220 g/7,7 oz without shells)</li>
+                <li>100 g (1/2 cup) of granulated sugar</li>
+                <li>300 ml (1 ¼ cup) of espresso coffee</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+              </ul>
+            </div>
+            <div class="ingredients-chart">
+              <img src="cake.png" class="chart" alt="Ingredients chart" />
+            </div>
+          </div>
+
+          <div class="info-container macros-container">
+            <div class="data-container macros-data">
+              <ul>
+                <li>
+                  300 g (about 30) Savoiardi (Ladyfingers). We recommend
+                  VICENZOVO SAVOIARDI LADYFINGERS by Matilde Vicenzi, or make
+                  homemade ladyfingers with our recipe, which are great!
+                </li>
+                <li>
+                  500 g (1,1 lb = 2 1/4 cups) of mascarpone cheese. Try our
+                  recipe for homemade mascarpone cheese.
+                </li>
+                <li>4 medium eggs (about 220 g/7,7 oz without shells)</li>
+              </ul>
+            </div>
+            <div class="chart macros-chart">
+              <div class="ingredients-chart">
+                <img src="cake.png" class="chart" alt="Ingredients chart" />
+              </div>
+            </div>
+          </div>
+
+          <div class="info-container nutrients-container">
+            <div class="data-container nutrients-data">
+              <ul>
+                <li>
+                  300 g (about 30) Savoiardi (Ladyfingers). We recommend
+                  VICENZOVO SAVOIARDI LADYFINGERS by Matilde Vicenzi, or make
+                  homemade ladyfingers with our recipe, which are great!
+                </li>
+                <li>
+                  500 g (1,1 lb = 2 1/4 cups) of mascarpone cheese. Try our
+                  recipe for homemade mascarpone cheese.
+                </li>
+                <li>4 medium eggs (about 220 g/7,7 oz without shells)</li>
+                <li>100 g (1/2 cup) of granulated sugar</li>
+                <li>300 ml (1 ¼ cup) of espresso coffee</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+              </ul>
+            </div>
+            <div class="chart nutrients-chart">
+              <div class="ingredients-chart">
+                <img src="cake.png" class="chart" alt="Ingredients chart" />
+              </div>
+            </div>
+          </div>
+
+          <div class="info-container nutrients-container">
+            <div class="data-container nutrients-data">
+              <ul>
+                <li>
+                  300 g (about 30) Savoiardi (Ladyfingers). We recommend
+                  VICENZOVO SAVOIARDI LADYFINGERS by Matilde Vicenzi, or make
+                  homemade ladyfingers with our recipe, which are great!
+                </li>
+                <li>
+                  500 g (1,1 lb = 2 1/4 cups) of mascarpone cheese. Try our
+                  recipe for homemade mascarpone cheese.
+                </li>
+                <li>4 medium eggs (about 220 g/7,7 oz without shells)</li>
+                <li>100 g (1/2 cup) of granulated sugar</li>
+                <li>300 ml (1 ¼ cup) of espresso coffee</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+              </ul>
+            </div>
+            <div class="chart nutrients-chart">
+              <div class="ingredients-chart">
+                <img src="cake.png" class="chart" alt="Ingredients chart" />
+              </div>
+            </div>
+          </div>
+          <div class="info-container nutrients-container">
+            <div class="data-container nutrients-data">
+              <ul>
+                <li>100 g (1/2 cup) of granulated sugar</li>
+                <li>300 ml (1 ¼ cup) of espresso coffee</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+                <li>2 tablespoons of Marsala Wine unsweetened cocoa powder</li>
+              </ul>
+            </div>
+            <div class="chart nutrients-chart">
+              <div class="ingredients-chart">
+                <img src="cake.png" class="chart" alt="Ingredients chart" />
+              </div>
+            </div>
+          </div>
+            <div class="profile-info hidden">
+            <img src="img.jpg" alt="Gabriel" style="width: 100%" />
+            <h1>Gabriel Lungu</h1>
+            <ul class="informations">
+              <li>GOAL WEIGHT:</li>
+              <li>CURRENT WEIGHT:</li>
+              <li>HEIGHT:</li>
+              <li>SEX:</li>
+              <li>ACTIVITY LEVEL:</li>
+            </ul>
+            <button class="change" type="button">CHANGE</button>
+          </div>-->
+
+          <!-- 
+          <form class="change-profile">
+            <div>
+              <label for="info">GOAL WEIGHT</label>
+              <input id="info" name="goalWeight" type="text" />
+            </div>
+            <div>
+              <label for="info">CURRENT WEIGHT</label>
+              <input id="info" name="curWeight" type="text" />
+            </div>
+            <div>
+              <label for="info">HEIGHT</label>
+              <input id="info" name="height" type="text" />
+            </div>
+            <div class="dropdown">
+              <label for="info">SEX</label>
+              <select class="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="dropdown">
+              <label for="info">ACTIVITY LEVELS</label>
+              <select class="activity-levels" name="activityLevel">
+                <option value="Not active">Not active (0 exercise)</option>
+                <option value="Moderate">
+                  Kind of active (Exercise once or twice a week)
+                </option>
+                <option value="Active">
+                  Active (Exercise 3-4 times a week)
+                </option>
+                <option value="Very Active">
+                  Very active (Exercise 5-6-7 times a week)
+                </option>
+              </select>
+            </div>
+
+            <button class="btn" type="submit">Send</button>
+          </form>
+-->
+          <!--  <form class="ingredients--form ">
+            <div class="breakfast--section ingredients--section">
+              <h3>BREAKFAST</h3>
+              <div class="breakfast">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="breakfastIng1" type="text" />
+              </div>
+              <div class="breakfast">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="breakfastIng2" type="text" />
+              </div>
+              <div class="breakfast">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="breakfastIng3" type="text" />
+              </div>
+              <div class="breakfast">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="breakfastIng4" type="text" />
+              </div>
+              <div class="breakfast">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="breakfastIng5" type="text" />
+              </div>
+            </div>
+          
+            <div class="first--snack--section ingredients--section">
+              <h3>FIRST SNACK</h3>
+              <div class="first--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="firstSnackIng1" type="text" />
+              </div>
+              <div class="first--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="firstSnackIng2" type="text" />
+              </div>
+              <div class="first--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="firstSnackIng3" type="text" />
+              </div>
+              <div class="first--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="firstSnackIng4" type="text" />
+              </div>
+              <div class="first--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="firstSnackIng5" type="text" />
+              </div>
+            </div>
+
+            <div class="lunch--section ingredients--section">
+              <h3>LUNCH</h3>
+              <div class="lunch">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="lunchIng1" type="text" />
+              </div>
+              <div class="lunch">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="lunchIng2" type="text" />
+              </div>
+              <div class="lunch">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="lunchIng3" type="text" />
+              </div>
+              <div class="lunch">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="lunchIng4" type="text" />
+              </div>
+              <div class="lunch">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="lunchIng5" type="text" />
+              </div>
+            </div>
+
+            <div class="second--snack--section ingredients--section">
+              <h3>SECOND SNACK</h3>
+              <div class="second--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="secondSnackIng1" type="text" />
+              </div>
+              <div class="second--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="secondSnackIng2" type="text" />
+              </div>
+              <div class="second--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="secondSnackIng3" type="text" />
+              </div>
+              <div class="second--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="secondSnackIng4" type="text" />
+              </div>
+              <div class="second--snack">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="secondSnackIng5" type="text" />
+              </div>
+            </div>
+
+            <div class="dinner--section ingredients--section">
+              <h3>DINNER</h3>
+              <div class="dinner">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="dinnerIng1" type="text" />
+              </div>
+              <div class="dinner">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="dinnerIng2" type="text" />
+              </div>
+              <div class="dinner">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="dinnerIng3" type="text" />
+              </div>
+              <div class="dinner">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="dinnerIng4" type="text" />
+              </div>
+              <div class="dinner">
+                <label for="ing">Ingredient</label>
+                <input id="ing" name="dinnerIng5" type="text" />
+              </div>
+            </div>
+
+            <button class="btn" type="submit">Send</button>
+          </form>
+        
+          -->
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
